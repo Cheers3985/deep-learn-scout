@@ -151,6 +151,7 @@ query: "site:arxiv.org {topic} review comprehensive"
 | 场景 | 处理方式 |
 |---|---|
 | Exa/WebSearch 不可用 | 降级到 WebFetch 手动搜索主要站点 |
+| 子 agent 中 WebSearch 受限 | 所有搜索在主会话中执行，不使用子 agent 执行搜索类任务 |
 | 论文无法访问全文 | 仅基于摘要萃取，标注「摘要摘录」 |
 | 资源数量不足（<10条） | 扩大搜索词范围，降低筛选门槛并标注 |
 | 主题过宽（如"AI"） | 请求用户缩窄到子领域后继续 |
